@@ -60,4 +60,6 @@ $ pip3 install -r requirements.txt
 #Run unit tests
 $ python3 -m unittest
 
+#Run directly with python
+$ python3 -m csv_reconciler
 ```
