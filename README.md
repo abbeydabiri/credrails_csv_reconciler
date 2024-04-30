@@ -19,7 +19,7 @@ git version 2.39.3
 $ python3 --version
 Python 3.12.2
 
-$ pip --version # pip comes as a part of python install
+$ pip3 --version # pip comes as a part of python install
 pip 24.0
 ```
 
@@ -60,4 +60,6 @@ $ pip3 install -r requirements.txt
 #Run unit tests
 $ python3 -m unittest
 
+#Run directly with python
+$ python3 -m csv_reconciler
 ```
