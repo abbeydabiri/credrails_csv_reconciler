@@ -6,10 +6,12 @@ from csv_reconciler.report import Report, Details
 
 class Reconciler():
   def __init__(self, source, target, ignore):
-    for id, value  in enumerate(ignore):
-      ignore[id] = value.lower()
-    self.ignore = ignore
-
+    self.ignore = []
+    if ignore is not None:
+      for id, value  in enumerate(ignore):
+        ignore[id] = value.lower()
+      self.ignore = ignore
+      
     if "id" in self.ignore:
       raise ValueError('ID column cannot be ignored')
 

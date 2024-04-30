@@ -22,7 +22,7 @@ def save_to_file(content):
   return filename
 
 def main():
-  sys.tracebacklimit = 0
+  # sys.tracebacklimit = 0
   parser = argparse.ArgumentParser()
   parser.add_argument('-s', dest='source', help='Source CSV file , omit the -s flag to select the file using a file dialog')
   parser.add_argument('-t', dest='target', help='Target CSV file, omit the -t flag to select the file using a file dialog')
